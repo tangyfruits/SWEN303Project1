@@ -94,15 +94,17 @@ REPLACED = 0
 # History
 COMMANDS = 0
 SEARCH = 0
-XQUERY = 9
-XQUERY1 = XQUERY declare default element namespace 'http://www.tei-c.org/ns/1.0'; for $item in collection(Colenso/diary/diary.xml)
-XQUERY2 = XQUERY declare default element namespace 'http://www.tei-c.org/ns/1.0'; for $item in collection("Colenso/'diary/diary.xml
-XQUERY3 = 
-XQUERY4 = declare namespace default ='http://www.tei-c.org/ns/1.0'; for $n in collection('Colenso/Hooker') return db:path($n)
-XQUERY5 = declare namespace default ='http://www.tei-c.org/ns/1.0'; for $n in collection('Colenso/Hooker/') return db:path($n)
-XQUERY6 = declare namespace default 'http://www.tei-c.org/ns/1.0'; for $n in collection('Colenso/Hooker/') return db:path($n)
-XQUERY7 = declare namespace tei='http://www.tei-c.org/ns/1.0'; for $n in collection('Colenso/Hooker/') return db:path($n)
-XQUERY8 = declare namespace tei='http://www.tei-c.org/ns/1.0'; for $n in (collection('Colenso/Hooker/') return db:path($n)
-XQUERY9 = declare namespace tei='http://www.tei-c.org/ns/1.0'; for $n in (collection('Colenso/Hooker/')//tei:p[position() = 1]) return db:path($n)
+XQUERY = 11
+XQUERY1 = XQUERY declare namespace tei='http://www.tei-c.org/ns/1.0'; for $n in collection('Colenso/Hooker/')//tei:p[position() = 1] return db:path($n)
+XQUERY2 = XQUERY declare namespace tei='http://www.tei-c.org/ns/1.0'; for $n in (collection('Colenso/Hooker/')//tei:p[position() = 1]) return db:path($n)
+XQUERY3 = XQUERY declare default element namespace 'http://www.tei-c.org/ns/1.0'; for $item in collection(Colenso/diary/diary.xml)
+XQUERY4 = XQUERY declare default element namespace 'http://www.tei-c.org/ns/1.0'; for $item in collection("Colenso/'diary/diary.xml
+XQUERY5 = 
+XQUERY6 = declare namespace default ='http://www.tei-c.org/ns/1.0'; for $n in collection('Colenso/Hooker') return db:path($n)
+XQUERY7 = declare namespace default ='http://www.tei-c.org/ns/1.0'; for $n in collection('Colenso/Hooker/') return db:path($n)
+XQUERY8 = declare namespace default 'http://www.tei-c.org/ns/1.0'; for $n in collection('Colenso/Hooker/') return db:path($n)
+XQUERY9 = declare namespace tei='http://www.tei-c.org/ns/1.0'; for $n in collection('Colenso/Hooker/') return db:path($n)
+XQUERY10 = declare namespace tei='http://www.tei-c.org/ns/1.0'; for $n in (collection('Colenso/Hooker/') return db:path($n)
+XQUERY11 = declare namespace tei='http://www.tei-c.org/ns/1.0'; for $n in (collection('Colenso/Hooker/')//tei:p[position() = 1]) return db:path($n)
 
 # Local Options
