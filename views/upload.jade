@@ -8,9 +8,9 @@ block body
   // Fixed navbar
   +navbar-fixed("Project: Colenso","navbar")
     +nav_item("/") Home
-    +nav_item("browse","active") Browse
+    +nav_item("browse") Browse
     +nav_item("edit") Edit
-    +nav_item("upload") Upload
+    +nav_item("upload","active") Upload
     +nav_item("about") About
     
   
@@ -20,4 +20,4 @@ block body
     .jumbotron
       h1 Project: Colenso
       p
-        |  Browse !{place}?
+        |  Upload !{place}?
