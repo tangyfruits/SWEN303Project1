@@ -19,5 +19,10 @@ block body
     // Main component for a primary marketing message or call to action
     .jumbotron
       h1 Project: Colenso
-      p
-        |  Browse !{place}?
+      
+      ul
+
+        each val in place
+          li: a(href = "/Colenso/" + val) !{val}
+
+        
