@@ -12,12 +12,19 @@ block body
     +nav_item("edit") Edit
     +nav_item("upload","active") Upload
     +nav_item("about") About
-    
-  
+
+
 
   .container
     // Main component for a primary marketing message or call to action
     .jumbotron
       h1 Project: Colenso
       p
-        |  Upload !{place}?
+        |  Help us expand! Contribute an XML file!
+      label(for='exampleInputFile') File input
+      input#exampleInputFile.form-control-file(type='file')
+      small.text-muted
+        | This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.
+      p
+        | 
+      button.btn.btn-primary(type='submit', name='file_submitted') Submit
