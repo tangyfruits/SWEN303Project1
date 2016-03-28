@@ -8,11 +8,12 @@ block body
   // Fixed navbar
   +navbar-fixed("Project: Colenso","navbar")
     +nav_item("/") Home
-    +nav_item("/xquery") XQuery
+
     +nav_item("/browse","active") Browse
     +nav_item("/edit") Edit
     +nav_item("/upload") Upload
     +nav_item("/about") About
+    +nav_item("/xquery") XQuery
     form.navbar-form.navbar-left(action="/", method="get", role='search')
       .form-group
         input.form-control(type='text', placeholder='Search', name="search_bar")
