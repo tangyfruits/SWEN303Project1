@@ -7,7 +7,7 @@ var xquery = "XQUERY declare default element namespace 'http://www.tei-c.org/ns/
 var test = " (//name[@type='place'])[1] "
 router.get("/",function(req,res){
   client.execute(xquery +
-    req.query.search_bar,
+    "db:add("Colenso"," + /home/dir/doc.xml + ")",
     function (error, result) {
       if(error){ console.error(error);}
       else {
