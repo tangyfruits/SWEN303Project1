@@ -14,9 +14,9 @@ block body
     +nav_item("upload") Upload
     +nav_item("about") About
 
-    form.navbar-form.navbar-left(action="/", method="get", role='search')
+    form.navbar-form.navbar-left(action="/xquery", method="get", role='search')
       .form-group
-        input.form-control(type='text', placeholder='Search', name="search_bar2")
+        input.form-control(type='text', placeholder='XQUERY Search', name="search_bar")
       button.btn.btn-default(type='submit') Submit
 
 
@@ -24,4 +24,7 @@ block body
     .jumbotron
       h1 Project: Colenso
       p(style='white-space:pre;')
-        | We are XQUERY in !{place}
+      ul
+
+        each val in place
+          li: a(href = "/Colenso/" + val) !{val}

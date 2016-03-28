@@ -25,11 +25,15 @@ block body
       h1 Project: Colenso
       .btn-group(data-toggle='buttons')
         label.btn.btn-primary.active
-          input(type='radio', autocomplete='off', checked='')
+          input(type='radio', autocomplete='off', value='text', checked='')
           |  TEXT
         label.btn.btn-primary
-          input(type='radio', autocomplete='off')
+          input(type='radio', autocomplete='off', value='raw')
           |  RAW     
       ul
-      p !{place}
+      -if(document.getElementById('text').checked) {
+        p !{place}
+      -}else if(document.getElementById('raw').checked) {
+        p #{place}
+      -}
         
