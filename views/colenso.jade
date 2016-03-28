@@ -23,12 +23,12 @@ block body
   .container
     // Main component for a primary marketing message or call to action
     .jumbotron
-        .btn-group(data-toggle='buttons')
-          label.btn.btn-primary.active
-            input(type='radio', autocomplete='off', value='text', checked='')
-            |  TEXT
-          label.btn.btn-primary
-            input(type='radio', autocomplete='off', value='raw')
-            |  RAW
-        ul
-          p !{place}
+      ul.nav.nav-tabs
+        li.nav.active
+          a(href='#TEXT', data-toggle='tab') TEXT
+        li.nav
+          a(href='#RAW', data-toggle='tab') RAW
+      // Tab panes
+      .tab-content
+        #TEXT.tab-pane.fade.in.active !{place}
+        #RAW.tab-pane.fade #{place}
