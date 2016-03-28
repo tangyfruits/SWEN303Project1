@@ -16,17 +16,15 @@ block body
     form.navbar-form.navbar-left(action="/", method="get", role='search')
       .form-group
         input.form-control(type='text', placeholder='Search', name="search_bar")
-      button.btn.btn-default(type='submit') Submit    
-  
+      button.btn.btn-default(type='submit') Submit
+
 
   .container
     // Main component for a primary marketing message or call to action
     .jumbotron
-      h1 Project: Colenso
-      
+      h1 Colenso XML Database
+
       ul
 
         each val in place
           li: a(href = "/Colenso/" + val) !{val}
-
-        

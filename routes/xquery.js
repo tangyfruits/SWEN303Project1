@@ -9,8 +9,8 @@ var tei3 = "XQUERY declare namespace tei='http://www.tei-c.org/ns/1.0'; "
 router.get("/",function(req,res){
   if(req.query.search_bar != undefined){
     console.log(req.query.search_bar)
-  client.execute(tei +
-"for $n in (collection('Colenso/')" + req.result_search_bar + ")" +
+  client.execute(tei3 +
+"for $n in (collection('Colenso/')" + req.query.search_bar + ")" +
 "return db:path($n)",
 
 
