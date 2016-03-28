@@ -23,5 +23,7 @@ block body
   .container
     .jumbotron
       h1 Project: Colenso
-      p(style='white-space:pre;')
-        | We are in !{place}
+      ul
+
+        each val in place
+          li: a(href = "/Colenso/" + val) !{val}
