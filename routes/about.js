@@ -9,10 +9,8 @@ var tei2 = "XQUERY declare element namespace 'http://www.tei-c.org/ns/1.0';"
 /* GET home page. */
 router.get("/",function(req,res){
   client.execute(tei +
-    req.query.search_bar2,
-//   client.execute("XQUERY declare namespace tei='http://www.tei-c.org/ns/1.0'; " +
-// "for $n in (collection('Colenso/Hooker/')//tei:p[position() = 1])" +
-// "return db:path($n)",
+    req.query.search_bar,
+
 
     function (error, result) {
       if(error){ console.error(error);}
