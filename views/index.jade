@@ -14,7 +14,7 @@ block body
     +nav_item("upload") Upload
     +nav_item("about") About
     +nav_item("xquery") XQuery
-    form.navbar-form.navbar-left(action="/", method="get", role='search')
+    form.navbar-form.navbar-left(action="/search", method="get", role='search')
       .form-group
         input.form-control(type='text', placeholder='Search', name="search_bar")
       button.btn.btn-default(type='submit') Submit
@@ -22,8 +22,6 @@ block body
 
   .container
     .jumbotron
-      h1 Project: Colenso
-      ul
-
-        each val in place
-          li: a(href = "/Colenso/" + val) !{val}
+      h1 William Colenso
+      a(title='By Unlisted photographer, before 1898 [Public domain], via Wikimedia Commons', href='https://commons.wikimedia.org/wiki/File%3AWilliam_Colenso_(1811-1899).png')
+        img(width='256', alt='William Colenso (1811-1899)', src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/William_Colenso_%281811-1899%29.png/256px-William_Colenso_%281811-1899%29.png')

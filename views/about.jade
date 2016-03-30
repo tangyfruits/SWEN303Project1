@@ -13,7 +13,7 @@ block body
     +nav_item("upload") Upload
     +nav_item("about","active") About
     +nav_item("xquery") XQuery
-    form.navbar-form.navbar-left(action="/", method="get", role='search')
+    form.navbar-form.navbar-left(action="/search", method="get", role='search')
       .form-group
         input.form-control(type='text', placeholder='Search', name="search_bar")
       button.btn.btn-default(type='submit') Submit
@@ -22,7 +22,7 @@ block body
   .container
     // Main component for a primary marketing message or call to action
     .jumbotron
-      h1 Contribute XML
+      h1 What is this?
         p
           | Project Colenso is a website that displays XML files to do with William Colenso.
           | The website is written in Jade Bootstrap and the database is Basex.

@@ -13,6 +13,7 @@ var upload = require('./routes/upload');
 var about = require('./routes/about')
 var colenso = require('./routes/colenso')
 var xquery = require('./routes/xquery')
+var search = require('./routes/search')
 
 
 var app = express();
@@ -37,6 +38,7 @@ app.use('/upload', upload);
 app.use('/about', about)
 app.use('/colenso', colenso)
 app.use('/xquery', xquery)
+app.use('/search', search)
 
 
 // catch 404 and forward to error handler

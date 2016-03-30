@@ -1,0 +1,28 @@
+extends ../node_modules/jade-bootstrap/_bootstrap
+
+append styles
+  // Custom styles for this template
+  link(href='../css/navbar-fixed-top.css', rel='stylesheet')
+
+block body
+  // Fixed navbar
+  +navbar-fixed("Project: Colenso","navbar")
+    +nav_item("/") Home
+
+    +nav_item("/browse") Browse
+    +nav_item("/edit") Edit
+    +nav_item("/upload") Upload
+    +nav_item("/about") About
+    +nav_item("/xquery") XQuery
+    form.navbar-form.navbar-left(action="/search", method="get", role='search')
+      .form-group
+        input.form-control(type='text', placeholder='Search', name="search_bar")
+      button.btn.btn-default(type='submit') Submit
+
+  .container
+    .jumbotron
+      h1 Project: Colenso
+      ul
+
+        each val in place
+          li: a(href = "/Colenso/" + val) !{val}
